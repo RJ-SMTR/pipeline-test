@@ -18,6 +18,15 @@ def read_config(yaml_file):
 def good_morning_schedule(date):
     return read_config('add_data_config.yaml')
 
+@daily_schedule(
+    pipeline_name="add_data_pipeline",
+    start_date=datetime(2020, 6, 1),
+    execution_time=time(16, 16),
+    execution_timezone="America/Sao_Paulo",
+)
+def add_data_schedule(date):
+    return read_config('add_data_config2.yaml')
+
 @repository
 def add_data_repository():
-    return [add_data_pipeline, good_morning_schedule]
+    return [add_data_pipeline, good_morning_schedule, add_data_schedule]

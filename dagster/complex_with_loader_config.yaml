@@ -1,0 +1,9 @@
+solids:
+  sort_by_calories:
+    inputs:
+      cereals:
+        csv_path: "cereal.csv.1"
+  sort_by_protein:
+    inputs:
+      cereals:
+        csv_path: "cereal.csv.1"
