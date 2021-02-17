@@ -1,0 +1,6 @@
+solids:
+  add_data:
+    inputs:
+      # bus_id: "brrim_TRO-2_20200610"
+      bus_id: "brrim_TRO-LECD_20200518"
+      table_name: "primeval-aspect-151903.gps_data.location"
