@@ -1,5 +1,7 @@
 from dagster import daily_schedule, repository
 import yaml
+import sys
+sys.path.append("pipelines")
 from add_gps_data import add_data_pipeline
 from datetime import datetime, time
 
